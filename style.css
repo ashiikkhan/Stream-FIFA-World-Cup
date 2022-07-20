@@ -95,13 +95,13 @@ body {
 /* sidebar */
 .sidebar {
   padding: 30px;
-  background-color: green;
+  background: #161616;
+  border-radius: 10px;
   height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  border-radius: 10px;
 }
 .sidebar .btn {
   width: 252px;
@@ -164,6 +164,42 @@ body {
 footer {
   padding: 130px 140px;
   background: #161616;
+}
+.footer__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  /* identical to box height */
+  text-align: center;
+  color: #ffffff;
+}
+footer hr {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 50px 0px;
+}
+.footer__links {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.footer__links a {
+  color: #b9b9b9;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.social__icons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  /* margin: 50px 0px; */
+  margin-top: 50px;
+}
+.social__icons .fa-brands {
+  font-size: 2rem;
+  color: #b9b9b9;
 }
 /* media query */
 @media screen and (max-width: 992px) {
