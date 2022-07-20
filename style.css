@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1600px;
+  margin: auto;
+  border: 3px solid red;
+  font-family: 'Poppins', sans-serif;
+}
+.header {
+  width: 83%;
+  height: 78vh;
+  /* height: 646px; */
+  margin: 50px auto;
+  background: #161616;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.header__text {
+  width: 50%;
+  height: 100%;
+  padding: 6.5rem 1.5rem 6rem 6.5rem;
+  /* margin: 5rem; */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.header__text h1 {
+  font-weight: 700;
+  font-size: 4.4rem;
+  line-height: 5rem;
+  color: #ffffff;
+}
+.header__text p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #ffffff;
+}
+.header__text .header__button {
+  padding: 1rem 1.5rem;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 23px;
+  text-align: center;
+  background: #dd0000;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  animation: beatit 1s ease-in-out infinite alternate;
+}
+@keyframes beatit {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.header__button .fa-solid {
+  margin-left: 10px;
+}
+
+.header__image {
+  width: 50%;
+  height: 100%;
+}
+.header__image img {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 5rem 0 0;
+  object-fit: cover;
+  object-position: left top;
+}
+
+/* media query */
+@media screen and (max-width: 992px) {
+  .header {
+    width: 89%;
+  }
+  .header__text {
+    padding: 3.7rem 0.5rem 3.7rem 4.8rem;
+  }
+  .header__text h1 {
+    font-size: 2.5rem;
+    line-height: 3.1rem;
+  }
+  .header__text p {
+    font-size: 0.875rem;
+    line-height: 1.4rem;
+  }
+  .header__text .header__button {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    line-height: 23px;
+  }
+  .header__image img {
+    padding: 4rem 1rem 0 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .header__text {
+    width: 100%;
+    height: 50%;
+    padding: 28px 38px;
+    align-items: center;
+  }
+  .header__text h1 {
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+  }
+  .header__text div {
+    width: 90%;
+    /* height: 40px; */
+  }
+  .header__text p {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .header__image {
+    width: 100%;
+    height: 50%;
+  }
+  .header__image img {
+    padding: 0rem 2.375rem 0 3.9375rem;
+  }
+}
