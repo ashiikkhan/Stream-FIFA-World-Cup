@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/football.png" type="image/x-icon" />
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,9 +17,16 @@
       src="https://kit.fontawesome.com/cf49a636b2.js"
       crossorigin="anonymous"
     ></script>
-
+    <!-- stylesheet & button active style -->
     <link rel="stylesheet" href="style.css" />
-    <title>World Cup</title>
+    <style>
+      .blog__btn--active {
+        background-color: var(--dark-maroon);
+        color: #eeeee4;
+      }
+    </style>
+    <!-- title -->
+    <title>Stram FIFA World Cup | Home</title>
   </head>
   <body>
     <!-- header section -->
@@ -46,9 +54,9 @@
       <div class="main__section">
         <!-- sidebar -->
         <aside class="sidebar">
-          <a href="#" class="sidebar__btn">Upcoming Match</a>
+          <a href="matches.html" class="sidebar__btn">Upcoming Match</a>
           <a href="#" class="sidebar__btn">All Group</a>
-          <a href="#" class="sidebar__btn sidebar__btn--active">Blog</a>
+          <a href="index.html" class="sidebar__btn blog__btn--active">Blog</a>
         </aside>
         <!-- articles -->
         <section class="articles">

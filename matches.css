@@ -1,0 +1,44 @@
+.matches {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+}
+.match {
+  background-color: var(--bg-secondary);
+  border-radius: 5px;
+  padding: 3.25rem 1.875rem;
+}
+.team__flags {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.match__details {
+  text-align: center;
+}
+.match__time {
+  font-size: 0.9rem;
+  color: var(--dark);
+}
+
+/*------ media query ------ */
+@media screen and (max-width: 1200px) {
+  .matches {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+  }
+  .team__names {
+    font-family: 1.25rem;
+    line-height: 1.875rem;
+  }
+  .match__time {
+    font-size: 0.875rem;
+    line-height: 1.4rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .matches {
+    grid-template-columns: 1fr;
+    grid-gap: 1.25rem;
+  }
+}

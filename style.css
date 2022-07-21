@@ -37,7 +37,8 @@ h1 {
   color: var(--light);
   font-weight: 700;
   font-size: 4.4rem;
-  line-height: 5rem;
+  line-height: 4.5rem;
+  padding-bottom: 0.5rem;
 }
 h2 {
   color: var(--dark);
@@ -160,10 +161,7 @@ a {
   font-size: 1.25rem;
   line-height: 1.875rem;
 }
-.sidebar__btn--active {
-  background-color: var(--dark-maroon);
-  color: #eeeee4;
-}
+
 /*------- article section -------*/
 .articles {
   display: grid;
@@ -171,7 +169,6 @@ a {
   grid-gap: 24px;
 }
 .article {
-  border: 1px solid #e8e8e8;
   background-color: var(--bg-secondary);
   border-radius: 10px;
 }
@@ -289,8 +286,8 @@ a {
     grid-gap: 1.5rem;
   }
   .article__title {
-    font-size: 20px;
-    line-height: 30px;
+    font-family: 1.25rem;
+    line-height: 1.875rem;
   }
   .last__article {
     display: none;
@@ -301,11 +298,29 @@ a {
   }
   /*------ footer -------*/
   footer {
-    padding: 70px 50px;
+    padding: 4.375rem 3.125rem;
   }
 }
 
 @media screen and (max-width: 576px) {
+  /* ------ header ------- */
+  h1 {
+    font-size: 1.375rem;
+    line-height: 2.125rem;
+    text-align: center;
+  }
+  h2 {
+    font-family: 1.25rem;
+    line-height: 1.875rem;
+  }
+  p {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .header {
     flex-direction: column;
     gap: 0.5rem;
@@ -313,35 +328,20 @@ a {
   .header__text {
     width: 100%;
     height: 50%;
-    padding: 28px 38px;
+    padding: 1.75rem 2.375rem;
     align-items: center;
-  }
-  .header__text h1 {
-    font-size: 22px;
-    line-height: 33px;
-    text-align: center;
   }
   .header__text div {
     width: 90%;
-  }
-  .header__text p {
-    font-size: 14px;
-    line-height: 24px;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
   .header__image {
     width: 100%;
     height: 50%;
   }
   .header__image img {
-    /* set again if see any issue */
-    /* padding: 0rem 2.375rem 0 3.9375rem; */
     padding: 0rem 1.375rem 0 3.9375rem;
   }
-  /* sidebar */
+  /*------ sidebar ------*/
   .sidebar {
     flex-direction: column;
   }
@@ -350,20 +350,19 @@ a {
   }
   .articles {
     grid-template-columns: 1fr;
-    grid-gap: 20px;
+    grid-gap: 1.25rem;
   }
-  .article__title {
-    font-size: 19px;
-    line-height: 28px;
+  .article__bottom p {
+    font-size: 1.125rem;
   }
 
-  /* hiding view all button */
+  /*-------- hiding view all button -------*/
   .btn__container {
     display: none;
   }
-  /* footer */
-  footer {
-    padding: 24px 20px;
+  /*----- footer ------*/
+  .footer {
+    padding: 1.5rem 1.25rem;
   }
   .footer__links {
     flex-direction: column;
