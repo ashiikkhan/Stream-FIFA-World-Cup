@@ -128,7 +128,7 @@ a {
   object-position: left top;
 }
 
-/* main section */
+/*------- main section -------*/
 .main__section {
   width: 83%;
   /* height: 100%; */
@@ -137,7 +137,7 @@ a {
   grid-template-columns: 312px 1fr;
   grid-gap: 1.5rem;
 }
-/* sidebar */
+/*------- sidebar -------*/
 .sidebar {
   padding: 1.875rem;
   background: var(--bg-gradient-two);
@@ -164,7 +164,7 @@ a {
   background-color: var(--dark-maroon);
   color: #eeeee4;
 }
-/* article section */
+/*------- article section -------*/
 .articles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -243,6 +243,7 @@ a {
   font-size: 2rem;
   color: var(--light);
 }
+
 /*------- media query -------*/
 @media screen and (max-width: 1200px) {
   /*------- header -------*/
@@ -268,7 +269,7 @@ a {
   .header__image img {
     padding: 4rem 1rem 0 0;
   }
-  /* main section */
+  /*------ main section ------*/
   .main__section {
     width: 89%;
     grid-template-columns: 1fr;
@@ -298,7 +299,7 @@ a {
   .view__btn--container {
     display: block;
   }
-  /* footer */
+  /*------ footer -------*/
   footer {
     padding: 70px 50px;
   }
@@ -322,7 +323,6 @@ a {
   }
   .header__text div {
     width: 90%;
-    /* height: 40px; */
   }
   .header__text p {
     font-size: 14px;
